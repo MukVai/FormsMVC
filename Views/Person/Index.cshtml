@@ -1,0 +1,40 @@
+﻿@model List<FormsApp.Models.Person>
+
+<h2>Person List</h2>
+
+<a asp-controller="Person" asp-action="Create" class="btn btn-success">Add New Person</a>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No persons found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model)
+            {
+                <tr>
+                    <td>@person.Id</td>
+                    <td>@person.Name</td>
+                    <td>@person.Email</td>
+                    <td>@person.Age</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@person.Id" class="btn btn-primary">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@person.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
