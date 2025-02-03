@@ -8,11 +8,14 @@ namespace FormsApp.Controllers;
 public class PersonController : Controller
 {
     private readonly HttpClient _httpClient;
-    private readonly string _apiUrl = "https://localhost:7055/api/PersonApi";
+    private readonly IConfiguration _config;
+    private readonly string? _apiUrl;
 
-    public PersonController(IHttpClientFactory httpClientFactory)
+    public PersonController(IHttpClientFactory httpClientFactory, IConfiguration config)
     {
         _httpClient = httpClientFactory.CreateClient();
+        _config = config;
+        _apiUrl = _config.GetSection("API").GetSection("BaseUrl").Value?.ToString();
     }
 
     public async Task<IActionResult> Index()
