@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsApp", "FormsApp.csproj", "{88585D19-CDE0-4723-B167-3DA2D562BF0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAPI", "..\FormsAPI\FormsAPI.csproj", "{B8BB9835-4585-47E0-902A-CA94C829F57E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsAPI", "..\FormsAPI\FormsAPI.csproj", "{B8BB9835-4585-47E0-902A-CA94C829F57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsRazor", "..\FormsRazor\FormsRazor.csproj", "{6755A19F-4128-4054-B42D-CFFE6148BCD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B8BB9835-4585-47E0-902A-CA94C829F57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8BB9835-4585-47E0-902A-CA94C829F57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8BB9835-4585-47E0-902A-CA94C829F57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6755A19F-4128-4054-B42D-CFFE6148BCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6755A19F-4128-4054-B42D-CFFE6148BCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6755A19F-4128-4054-B42D-CFFE6148BCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6755A19F-4128-4054-B42D-CFFE6148BCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
